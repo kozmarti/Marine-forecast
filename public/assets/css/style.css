@@ -1,0 +1,298 @@
+
+.header-picture {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.header-picture img {
+    border-radius: 10px;
+}
+
+.italic-style {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.picture-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-picture p {
+    font-size: 1.6em;
+}
+
+.sparrow {
+    width:600px;
+    height:auto;
+}
+
+.logo {
+    color: midnightblue;
+    font-size: 50px;
+}
+
+.sea-blue {
+    color: midnightblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.button-submission {
+    color: white;
+    background-color: midnightblue;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.button-submission:hover {
+    cursor: pointer;
+
+}
+
+
+body {
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, antiquewhite 100%);
+
+}
+
+li {
+    padding: 3px;
+}
+
+.ocean {
+    z-index: -1;
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:-700px;
+    left:0;
+    background: #015871;
+}
+
+.wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-location {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.form-container {
+    padding-top: 20px;
+
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+    padding-bottom: 20px;
+}
+
+.letsgo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.compass {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    position: relative;
+    border: 10px solid #777;
+    box-shadow:
+            0 0 4px #000,
+            0 0 1px 8px #ccc,
+            5px 10px 15px #48436f;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+.compass:hover {
+    transform: skewX(-5deg) skewY(-2deg);
+
+    box-shadow:
+            0 0 4px #000,
+            0 0 1px 8px #ccc,
+            8px 12px 3px 5px #666,
+            20px 28px 20px #afa9d7;
+}
+
+.compass:before {
+    content: '';
+
+    border: 2px dashed #444;
+    position: absolute;
+    left: 10px; right: 10px;
+    bottom: 10px; top: 10px;
+
+    border-radius: 50%;
+}
+
+.compass:after {
+    content: '';
+
+    position: absolute;
+    left: -10px; right: -10px;
+    bottom: -10px; top: -10px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+            -45deg,
+            rgba(255,255,255,0.9) 0%,
+            rgba(255,255,255,0.3) 47%,
+            rgba(255,255,255,0) 48%,
+            rgba(255,255,255,0) 100%
+    );
+}
+
+
+.compass span {
+    position: absolute;
+    font-weight: bold;
+}
+
+
+.compass span:nth-child(1) {
+    left: 55px; top: 10px;
+}
+
+.compass span:nth-child(3) {
+    left: 55px; bottom: 10px;
+}
+
+.compass span:nth-child(2) {
+    right: 15px; top: 50px;
+}
+
+.compass span:nth-child(4) {
+    left: 15px; top: 50px;
+}
+
+
+.speed {
+    border: solid;
+    border-radius: 10%;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.pointer {
+    position: absolute;
+    width: 10px;
+    height: 40%;
+    bottom: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 30%;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+}
+
+.container-weather-card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: midnightblue;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+.container-weather-card ul {
+    list-style-type: none;
+}
+
+
+
+
+.compass-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.departure, .destination {
+    width: 100%;
+    align-items: center;
+}
+
+.small-icon {
+    height:12px;
+    width:12px;
+    color: midnightblue;
+}
+
+.compass-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.destination,  .departure  {
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, lightblue 100%);
+    border-radius: 30px;
+    border: 1px solid midnightblue;
+    box-shadow: 2px 2px 2px midnightblue;
+    margin: 50px;
+}
+
+.departure h3, .destination h3 {
+    padding: 10px;
+}
+
+.time-error {
+    width:400px;
+    color: red;
+    padding: 20px;
+
+}
