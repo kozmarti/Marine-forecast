@@ -8,7 +8,7 @@ Hackathon: an event where people work collaboratively using computer programming
 Topic: Back to the future. Create a web application perfectly adapted to the needs of an era in the past.  
 Our project: back to the 18th century, period of pirates on the Caribean.  
 Problem: unpredictable weather conditions and challenging navigation on the ocean.  
-Solution: **Web application of marine forecasts based on location and time.**
+Solution: **Web application of marine forecast based on location and time.**
 
 
 ## Tools and Languages
