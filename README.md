@@ -3,11 +3,13 @@
 ## Description
 
 24-hour project delivered in the Wild Code School of Bordeaux.
+
 Hackathon: an event where people work collaboratively using computer programming to solve technical challenges.
 
 Topic: Back to the future. Create a web application perfectly adapted to the needs of an era in the past.
 
 Our project: back to the 18th century, period of pirates on the Caribean.
+
 Problem: unpredictable weather conditions and challenging navigation on the ocean.
 
 Web application of marine forecasts based on location and time.
