@@ -15,7 +15,7 @@ Solution: **Web application of marine forecast based on location and time.**
 
 - [API Strom Glass Marine Weather & Tide](https://stormglass.io/)
 - [API OpenStreetMap Leaflet](https://leafletjs.com/reference-1.7.1.html)
-- PHP 
+- PHP 7.4
 - Twig
 - MVC
 - HTML
